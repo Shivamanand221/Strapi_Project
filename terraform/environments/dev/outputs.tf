@@ -5,3 +5,7 @@ output "vpc_id" {
 output "public_subnet_id" {
   value = module.vpc.public_subnet_id
 }
+
+output "security_group_id" {
+  value = module.security_group.security_group_id
+}

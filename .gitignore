@@ -1,4 +1,6 @@
-**/.terraform/*
+.terraform/
 *.tfstate
 *.tfstate.*
+crash.log
 *.tfvars
+Thumbs.db
