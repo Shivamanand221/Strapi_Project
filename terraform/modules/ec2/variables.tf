@@ -21,3 +21,8 @@ variable "key_name" {
 variable "ami_id" {
   type = string
 }
+
+variable "user_data" {
+  type    = string
+  default = null
+}
