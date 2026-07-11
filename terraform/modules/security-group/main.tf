@@ -27,13 +27,14 @@ resource "aws_security_group" "this" {
         cidr_blocks = ["0.0.0.0/0"]
     }
 
-    ingress {
-        description = "Strapi"
-        from_port = 1337
-        to_port = 1337
-        protocol = "tcp"
-        cidr_blocks = ["0.0.0.0/0"]
-    }
+    #Removed after adding nginx as a reverse proxy to Strapi. Now only ports 80 and 443 are exposed to the public.
+    # ingress {
+    #     description = "Strapi"
+    #     from_port = 1337
+    #     to_port = 1337
+    #     protocol = "tcp"
+    #     cidr_blocks = ["0.0.0.0/0"]
+    # }
     
     egress {
         description = "All traffic"

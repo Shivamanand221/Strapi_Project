@@ -29,8 +29,8 @@ services:
       TRANSFER_TOKEN_SALT: wnHSZ0LZiCBrPzoaLECwWg==
       ENCRYPTION_KEY: Tcc8R8AlDw70myo1yRH2cCIzRDVRcl5aSkLw9ebWmtQ=
       JWT_SECRET: RdNSlWBAh+Je2KKv2QBxVoq4eQQSOfYZYk/MbqKuCKA=
-    ports:
-      - "1337:1337"
+    expose:
+      - "1337"
     depends_on:
       - postgres
   postgres:
