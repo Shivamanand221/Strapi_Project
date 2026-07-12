@@ -2,29 +2,30 @@
 
 An intelligent infrastructure automation platform that combines cloud infrastructure provisioning with intelligent automation capabilities. InfraPilot streamlines infrastructure deployment, management, and monitoring through a unified interface.
 
+**Note**: This project includes a cloned [Strapi](https://strapi.io/) instance in the `Strapi/` directory for headless CMS capabilities. See `Strapi/README.md` for Strapi-specific documentation.
+
 ## 🚀 Features
 
 - **Infrastructure as Code (IaC)**: Terraform-based infrastructure provisioning with HCL configurations
-- **Automation Engine**: Intelligent workflow automation using TypeScript and JavaScript
+- **Automation Engine**: Intelligent workflow automation and orchestration
 - **CLI Tools**: Command-line utilities for infrastructure management and deployment
 - **API Integration**: RESTful APIs for seamless integration with existing systems
 - **Monitoring & Logging**: Built-in monitoring capabilities for infrastructure health
 - **Cloud-Agnostic**: Support for multiple cloud providers (AWS, Azure, GCP)
-- **Scripting**: Shell scripts for deployment automation and system configuration
+- **Deployment Automation**: Scripts and tools for automated infrastructure deployment
 
 ## 📋 Prerequisites
 
 - **Node.js** (v16 or higher)
-- **TypeScript** (v4.5 or higher)
 - **Terraform** (v1.0 or higher)
 - **Git**
 - Cloud provider credentials (AWS, Azure, or GCP)
 
-## 💻 Tech Stack
+## 💻 Tech Stack (InfraPilot Core)
 
-- **Frontend/Backend**: JavaScript (32.1%), TypeScript (31.9%)
-- **Infrastructure**: HCL (23.9%) - Terraform configurations
-- **Scripting**: Shell (12.1%)
+- **Orchestration & Automation**: JavaScript, TypeScript
+- **Infrastructure as Code**: HCL (Terraform)
+- **Scripting & Deployment**: Shell scripts
 - **Runtime**: Node.js
 
 ## 📦 Installation
@@ -105,9 +106,10 @@ InfraPilot/
 │   ├── cli/           # CLI commands
 │   └── utils/         # Utility functions
 ├── terraform/         # Terraform configurations (HCL)
-├── scripts/           # Shell scripts for automation
+├── scripts/           # Shell scripts for automation and deployment
 ├── tests/             # Test files
 ├── config/            # Configuration files
+├── Strapi/            # Cloned Strapi CMS (open source)
 └── dist/              # Compiled output
 ```
 
@@ -165,8 +167,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 🙏 Acknowledgments
 
 - Terraform documentation for IaC best practices
-- Node.js community for excellent libraries and tools
 - Cloud provider documentation for API integration
+- [Strapi](https://strapi.io/) - Open source headless CMS
 
 ## 📧 Contact
 
